@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Hr7-Ys-sbO">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Firestore View Controller-->
+        <scene sceneID="LJc-9l-U3Z">
+            <objects>
+                <viewController id="Hr7-Ys-sbO" customClass="FirestoreViewController" customModule="SampleFirebase" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8YP-kg-bbV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="4jB-al-R8W">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S41-Dh-5zB">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="409"/>
+                                        <state key="normal" title="add"/>
+                                        <connections>
+                                            <action selector="addAction:" destination="Hr7-Ys-sbO" eventType="touchUpInside" id="w6p-wm-pKq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2un-pb-4G1">
+                                        <rect key="frame" x="0.0" y="409" width="414" height="409"/>
+                                        <state key="normal" title="read"/>
+                                        <connections>
+                                            <action selector="readAction:" destination="Hr7-Ys-sbO" eventType="touchUpInside" id="v2X-8w-szo"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="4jB-al-R8W" firstAttribute="leading" secondItem="eHe-ej-Y6k" secondAttribute="leading" id="1zu-81-Xvw"/>
+                            <constraint firstItem="eHe-ej-Y6k" firstAttribute="trailing" secondItem="4jB-al-R8W" secondAttribute="trailing" id="Vyf-La-BgI"/>
+                            <constraint firstItem="4jB-al-R8W" firstAttribute="top" secondItem="eHe-ej-Y6k" secondAttribute="top" id="YEF-d6-QKf"/>
+                            <constraint firstItem="eHe-ej-Y6k" firstAttribute="bottom" secondItem="4jB-al-R8W" secondAttribute="bottom" id="wrq-QD-AXF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eHe-ej-Y6k"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="beb-vl-7zn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-91" y="183"/>
+        </scene>
+    </scenes>
+</document>

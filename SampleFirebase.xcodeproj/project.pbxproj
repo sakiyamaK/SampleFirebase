@@ -19,9 +19,12 @@
 		B6151EF124E7B1950004F0D1 /* ML.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6151EEC24E7B1950004F0D1 /* ML.storyboard */; };
 		B6151EF524E7B1A20004F0D1 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6151EF224E7B1A20004F0D1 /* Database.swift */; };
 		B6151EF624E7B1A20004F0D1 /* FirebaseUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6151EF324E7B1A20004F0D1 /* FirebaseUtil.swift */; };
-		B6151EF724E7B1A20004F0D1 /* Analytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6151EF424E7B1A20004F0D1 /* Analytics.swift */; };
+		B6151EF724E7B1A20004F0D1 /* AnalyticsUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6151EF424E7B1A20004F0D1 /* AnalyticsUtil.swift */; };
 		B6151EFC24E90F140004F0D1 /* Crashlitics.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6151EFB24E90F140004F0D1 /* Crashlitics.storyboard */; };
 		B6151EFE24E90F240004F0D1 /* CrashliticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6151EFD24E90F240004F0D1 /* CrashliticsViewController.swift */; };
+		B6151F0024E91A2D0004F0D1 /* ConfigUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6151EFF24E91A2D0004F0D1 /* ConfigUtil.swift */; };
+		B6151F0324E9909F0004F0D1 /* RemoteConfig.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6151F0224E9909F0004F0D1 /* RemoteConfig.storyboard */; };
+		B6151F0524E990AD0004F0D1 /* RemoteConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6151F0424E990AD0004F0D1 /* RemoteConfigViewController.swift */; };
 		B6B3DDF024D85C5500C504DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B3DDEF24D85C5500C504DC /* AppDelegate.swift */; };
 		B6B3DDF424D85C5500C504DC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B3DDF324D85C5500C504DC /* MainViewController.swift */; };
 		B6B3DDF724D85C5500C504DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6B3DDF524D85C5500C504DC /* Main.storyboard */; };
@@ -69,9 +72,12 @@
 		B6151EEC24E7B1950004F0D1 /* ML.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ML.storyboard; sourceTree = "<group>"; };
 		B6151EF224E7B1A20004F0D1 /* Database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		B6151EF324E7B1A20004F0D1 /* FirebaseUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseUtil.swift; sourceTree = "<group>"; };
-		B6151EF424E7B1A20004F0D1 /* Analytics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Analytics.swift; sourceTree = "<group>"; };
+		B6151EF424E7B1A20004F0D1 /* AnalyticsUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsUtil.swift; sourceTree = "<group>"; };
 		B6151EFB24E90F140004F0D1 /* Crashlitics.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Crashlitics.storyboard; sourceTree = "<group>"; };
 		B6151EFD24E90F240004F0D1 /* CrashliticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrashliticsViewController.swift; sourceTree = "<group>"; };
+		B6151EFF24E91A2D0004F0D1 /* ConfigUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigUtil.swift; sourceTree = "<group>"; };
+		B6151F0224E9909F0004F0D1 /* RemoteConfig.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RemoteConfig.storyboard; sourceTree = "<group>"; };
+		B6151F0424E990AD0004F0D1 /* RemoteConfigViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteConfigViewController.swift; sourceTree = "<group>"; };
 		B6B3DDEC24D85C5500C504DC /* SampleFirebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleFirebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6B3DDEF24D85C5500C504DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6B3DDF324D85C5500C504DC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -187,6 +193,15 @@
 			path = Crashlitycs;
 			sourceTree = "<group>";
 		};
+		B6151F0124E990830004F0D1 /* RemoteConfig */ = {
+			isa = PBXGroup;
+			children = (
+				B6151F0224E9909F0004F0D1 /* RemoteConfig.storyboard */,
+				B6151F0424E990AD0004F0D1 /* RemoteConfigViewController.swift */,
+			);
+			path = RemoteConfig;
+			sourceTree = "<group>";
+		};
 		B6B3DDE324D85C5500C504DC = {
 			isa = PBXGroup;
 			children = (
@@ -244,9 +259,10 @@
 		B6B3DE2124D85FB200C504DC /* Utility */ = {
 			isa = PBXGroup;
 			children = (
-				B6151EF424E7B1A20004F0D1 /* Analytics.swift */,
+				B6151EF424E7B1A20004F0D1 /* AnalyticsUtil.swift */,
 				B6151EF224E7B1A20004F0D1 /* Database.swift */,
 				B6151EF324E7B1A20004F0D1 /* FirebaseUtil.swift */,
+				B6151EFF24E91A2D0004F0D1 /* ConfigUtil.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -254,6 +270,7 @@
 		B6B3DE2224D860B800C504DC /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				B6151F0124E990830004F0D1 /* RemoteConfig */,
 				B6151EE024E7B1060004F0D1 /* Analytics */,
 				B6B3DE2324D860D200C504DC /* Auth */,
 				B6151EFA24E90F000004F0D1 /* Crashlitycs */,
@@ -386,6 +403,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6151F0324E9909F0004F0D1 /* RemoteConfig.storyboard in Resources */,
 				B6B3DDFC24D85C5700C504DC /* LaunchScreen.storyboard in Resources */,
 				B6151EE224E7B1190004F0D1 /* Analytics.storyboard in Resources */,
 				B6B3DE2024D85D8700C504DC /* GoogleService-Info.plist in Resources */,
@@ -581,12 +599,14 @@
 				B6151EF624E7B1A20004F0D1 /* FirebaseUtil.swift in Sources */,
 				B6151EF024E7B1950004F0D1 /* MLViewController.swift in Sources */,
 				B6B3DDF424D85C5500C504DC /* MainViewController.swift in Sources */,
+				B6151F0524E990AD0004F0D1 /* RemoteConfigViewController.swift in Sources */,
 				B6B3DE2724D8610600C504DC /* AuthViewController.swift in Sources */,
 				B6151EED24E7B1950004F0D1 /* FirestoreViewController.swift in Sources */,
 				B6151EEF24E7B1950004F0D1 /* UserModel.swift in Sources */,
 				B6151EF524E7B1A20004F0D1 /* Database.swift in Sources */,
-				B6151EF724E7B1A20004F0D1 /* Analytics.swift in Sources */,
+				B6151EF724E7B1A20004F0D1 /* AnalyticsUtil.swift in Sources */,
 				B6B3DDF024D85C5500C504DC /* AppDelegate.swift in Sources */,
+				B6151F0024E91A2D0004F0D1 /* ConfigUtil.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -55,6 +55,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Rw-9y-rHZ">
                                         <rect key="frame" x="0.0" y="387" width="414" height="129"/>
                                         <state key="normal" title="RemoteConfig"/>
+                                        <connections>
+                                            <segue destination="Mwj-aB-61S" kind="show" id="OEd-99-CIX"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TMm-ac-sND">
                                         <rect key="frame" x="0.0" y="516" width="414" height="129"/>
@@ -107,6 +110,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DYP-QF-Yvd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="714" y="133"/>
+        </scene>
+        <!--RemoteConfig-->
+        <scene sceneID="Osi-l1-Y2S">
+            <objects>
+                <viewControllerPlaceholder storyboardName="RemoteConfig" id="Mwj-aB-61S" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="4Qx-fc-QDn"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mgN-Yg-gD0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="724" y="187"/>
         </scene>
         <!--ML-->
         <scene sceneID="q0A-c1-5eY">

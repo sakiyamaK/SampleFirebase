@@ -25,6 +25,10 @@
 		B6151F0024E91A2D0004F0D1 /* ConfigUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6151EFF24E91A2D0004F0D1 /* ConfigUtil.swift */; };
 		B6151F0324E9909F0004F0D1 /* RemoteConfig.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6151F0224E9909F0004F0D1 /* RemoteConfig.storyboard */; };
 		B6151F0524E990AD0004F0D1 /* RemoteConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6151F0424E990AD0004F0D1 /* RemoteConfigViewController.swift */; };
+		B67C7553257274AB00A2EE38 /* Storage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B67C7552257274AB00A2EE38 /* Storage.storyboard */; };
+		B67C7558257274B800A2EE38 /* StorageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67C7557257274B800A2EE38 /* StorageViewController.swift */; };
+		B67C75872572765D00A2EE38 /* StorageUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67C75862572765D00A2EE38 /* StorageUtil.swift */; };
+		B67C75E325727BED00A2EE38 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B67C75E225727BED00A2EE38 /* GoogleService-Info.plist */; };
 		B6B3DDF024D85C5500C504DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B3DDEF24D85C5500C504DC /* AppDelegate.swift */; };
 		B6B3DDF424D85C5500C504DC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B3DDF324D85C5500C504DC /* MainViewController.swift */; };
 		B6B3DDF724D85C5500C504DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6B3DDF524D85C5500C504DC /* Main.storyboard */; };
@@ -32,7 +36,6 @@
 		B6B3DDFC24D85C5700C504DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6B3DDFA24D85C5700C504DC /* LaunchScreen.storyboard */; };
 		B6B3DE0724D85C5700C504DC /* SampleFirebaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B3DE0624D85C5700C504DC /* SampleFirebaseTests.swift */; };
 		B6B3DE1224D85C5700C504DC /* SampleFirebaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B3DE1124D85C5700C504DC /* SampleFirebaseUITests.swift */; };
-		B6B3DE2024D85D8700C504DC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6B3DE1F24D85D8700C504DC /* GoogleService-Info.plist */; };
 		B6B3DE2524D860F300C504DC /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6B3DE2424D860F300C504DC /* Auth.storyboard */; };
 		B6B3DE2724D8610600C504DC /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B3DE2624D8610600C504DC /* AuthViewController.swift */; };
 /* End PBXBuildFile section */
@@ -78,6 +81,10 @@
 		B6151EFF24E91A2D0004F0D1 /* ConfigUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigUtil.swift; sourceTree = "<group>"; };
 		B6151F0224E9909F0004F0D1 /* RemoteConfig.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RemoteConfig.storyboard; sourceTree = "<group>"; };
 		B6151F0424E990AD0004F0D1 /* RemoteConfigViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteConfigViewController.swift; sourceTree = "<group>"; };
+		B67C7552257274AB00A2EE38 /* Storage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storage.storyboard; sourceTree = "<group>"; };
+		B67C7557257274B800A2EE38 /* StorageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageViewController.swift; sourceTree = "<group>"; };
+		B67C75862572765D00A2EE38 /* StorageUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageUtil.swift; sourceTree = "<group>"; };
+		B67C75E225727BED00A2EE38 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B6B3DDEC24D85C5500C504DC /* SampleFirebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleFirebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6B3DDEF24D85C5500C504DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6B3DDF324D85C5500C504DC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -91,7 +98,6 @@
 		B6B3DE0D24D85C5700C504DC /* SampleFirebaseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleFirebaseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6B3DE1124D85C5700C504DC /* SampleFirebaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleFirebaseUITests.swift; sourceTree = "<group>"; };
 		B6B3DE1324D85C5700C504DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B6B3DE1F24D85D8700C504DC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B6B3DE2424D860F300C504DC /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
 		B6B3DE2624D8610600C504DC /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		CBC27FE9106573EC2795B7B5 /* Pods-SampleFirebase-SampleFirebaseUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleFirebase-SampleFirebaseUITests.release.xcconfig"; path = "Target Support Files/Pods-SampleFirebase-SampleFirebaseUITests/Pods-SampleFirebase-SampleFirebaseUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -202,6 +208,15 @@
 			path = RemoteConfig;
 			sourceTree = "<group>";
 		};
+		B67C754E2572748800A2EE38 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				B67C7552257274AB00A2EE38 /* Storage.storyboard */,
+				B67C7557257274B800A2EE38 /* StorageViewController.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
 		B6B3DDE324D85C5500C504DC = {
 			isa = PBXGroup;
 			children = (
@@ -232,7 +247,7 @@
 				B6B3DDEF24D85C5500C504DC /* AppDelegate.swift */,
 				B6B3DDF824D85C5700C504DC /* Assets.xcassets */,
 				B6B3DDFA24D85C5700C504DC /* LaunchScreen.storyboard */,
-				B6B3DE1F24D85D8700C504DC /* GoogleService-Info.plist */,
+				B67C75E225727BED00A2EE38 /* GoogleService-Info.plist */,
 				B6B3DDFD24D85C5700C504DC /* Info.plist */,
 			);
 			path = SampleFirebase;
@@ -263,6 +278,7 @@
 				B6151EF224E7B1A20004F0D1 /* Database.swift */,
 				B6151EF324E7B1A20004F0D1 /* FirebaseUtil.swift */,
 				B6151EFF24E91A2D0004F0D1 /* ConfigUtil.swift */,
+				B67C75862572765D00A2EE38 /* StorageUtil.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -270,6 +286,7 @@
 		B6B3DE2224D860B800C504DC /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				B67C754E2572748800A2EE38 /* Storage */,
 				B6151F0124E990830004F0D1 /* RemoteConfig */,
 				B6151EE024E7B1060004F0D1 /* Analytics */,
 				B6B3DE2324D860D200C504DC /* Auth */,
@@ -406,11 +423,12 @@
 				B6151F0324E9909F0004F0D1 /* RemoteConfig.storyboard in Resources */,
 				B6B3DDFC24D85C5700C504DC /* LaunchScreen.storyboard in Resources */,
 				B6151EE224E7B1190004F0D1 /* Analytics.storyboard in Resources */,
-				B6B3DE2024D85D8700C504DC /* GoogleService-Info.plist in Resources */,
+				B67C7553257274AB00A2EE38 /* Storage.storyboard in Resources */,
 				B6151EFC24E90F140004F0D1 /* Crashlitics.storyboard in Resources */,
 				B6151EEE24E7B1950004F0D1 /* Firestore.storyboard in Resources */,
 				B6B3DE2524D860F300C504DC /* Auth.storyboard in Resources */,
 				B6151EF124E7B1950004F0D1 /* ML.storyboard in Resources */,
+				B67C75E325727BED00A2EE38 /* GoogleService-Info.plist in Resources */,
 				B6B3DDF924D85C5700C504DC /* Assets.xcassets in Resources */,
 				B6B3DDF724D85C5500C504DC /* Main.storyboard in Resources */,
 			);
@@ -602,8 +620,10 @@
 				B6151F0524E990AD0004F0D1 /* RemoteConfigViewController.swift in Sources */,
 				B6B3DE2724D8610600C504DC /* AuthViewController.swift in Sources */,
 				B6151EED24E7B1950004F0D1 /* FirestoreViewController.swift in Sources */,
+				B67C75872572765D00A2EE38 /* StorageUtil.swift in Sources */,
 				B6151EEF24E7B1950004F0D1 /* UserModel.swift in Sources */,
 				B6151EF524E7B1A20004F0D1 /* Database.swift in Sources */,
+				B67C7558257274B800A2EE38 /* StorageViewController.swift in Sources */,
 				B6151EF724E7B1A20004F0D1 /* AnalyticsUtil.swift in Sources */,
 				B6B3DDF024D85C5500C504DC /* AppDelegate.swift in Sources */,
 				B6151F0024E91A2D0004F0D1 /* ConfigUtil.swift in Sources */,
@@ -687,6 +707,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -747,6 +768,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -769,6 +791,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "";
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;

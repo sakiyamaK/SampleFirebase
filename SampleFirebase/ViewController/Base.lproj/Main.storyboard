@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M4x-HM-0n8">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M4x-HM-0n8">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -34,40 +36,47 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="S0l-hT-Tqg">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tIZ-dV-Kew">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="129"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tIZ-dV-Kew">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="110.5"/>
                                         <state key="normal" title="Auth"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oI1-YA-uvk">
-                                        <rect key="frame" x="0.0" y="129" width="414" height="129"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oI1-YA-uvk">
+                                        <rect key="frame" x="0.0" y="110.5" width="414" height="110.5"/>
                                         <state key="normal" title="Analytics"/>
                                         <connections>
                                             <segue destination="2mH-OF-LW3" kind="show" id="Dmx-rC-XVz"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mUQ-sc-7tQ">
-                                        <rect key="frame" x="0.0" y="258" width="414" height="129"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mUQ-sc-7tQ">
+                                        <rect key="frame" x="0.0" y="221" width="414" height="110.5"/>
                                         <state key="normal" title="Crashlitics"/>
                                         <connections>
                                             <segue destination="PM8-au-a9j" kind="show" id="4ac-gv-mlW"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Rw-9y-rHZ">
-                                        <rect key="frame" x="0.0" y="387" width="414" height="129"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Rw-9y-rHZ">
+                                        <rect key="frame" x="0.0" y="331.5" width="414" height="111"/>
                                         <state key="normal" title="RemoteConfig"/>
                                         <connections>
                                             <segue destination="Mwj-aB-61S" kind="show" id="OEd-99-CIX"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TMm-ac-sND">
-                                        <rect key="frame" x="0.0" y="516" width="414" height="129"/>
-                                        <state key="normal" title="Firstore"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TMm-ac-sND">
+                                        <rect key="frame" x="0.0" y="442.5" width="414" height="110.5"/>
+                                        <state key="normal" title="Firestore"/>
                                         <connections>
                                             <segue destination="j6a-Jn-czT" kind="show" id="MUT-Jc-TDX"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QE7-sd-djl">
-                                        <rect key="frame" x="0.0" y="645" width="414" height="129"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PlJ-lV-ZUz">
+                                        <rect key="frame" x="0.0" y="553" width="414" height="110.5"/>
+                                        <state key="normal" title="Storage"/>
+                                        <connections>
+                                            <segue destination="z6F-oH-Z8u" kind="show" id="9oS-bK-JcD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QE7-sd-djl">
+                                        <rect key="frame" x="0.0" y="663.5" width="414" height="110.5"/>
                                         <state key="normal" title="MachineLearning"/>
                                         <connections>
                                             <segue destination="IW6-CH-BaR" kind="show" id="cwM-8Q-Q6P"/>
@@ -76,14 +85,14 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="S0l-hT-Tqg" secondAttribute="trailing" id="HCS-qG-yzC"/>
                             <constraint firstItem="S0l-hT-Tqg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="PeM-Cb-fOH"/>
                             <constraint firstItem="S0l-hT-Tqg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="oHn-hn-JQw"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="S0l-hT-Tqg" secondAttribute="bottom" id="yjs-0a-Iql"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="mDd-Ha-Bel"/>
                 </viewController>
@@ -131,6 +140,16 @@
             </objects>
             <point key="canvasLocation" x="724" y="273"/>
         </scene>
+        <!--Storage-->
+        <scene sceneID="J6O-BN-C5D">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Storage" id="z6F-oH-Z8u" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="xHq-JW-vRZ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DXU-WR-5Ed" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="507" y="376"/>
+        </scene>
         <!--Crashlitics-->
         <scene sceneID="LlK-PL-hU5">
             <objects>
@@ -142,4 +161,9 @@
             <point key="canvasLocation" x="695" y="60"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

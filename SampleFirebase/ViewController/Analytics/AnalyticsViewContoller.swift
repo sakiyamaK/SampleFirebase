@@ -14,9 +14,5 @@ class AnalyticsViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     AnalyticsUtil.send(event: "pv", paramters: ["name": "AnalyticsViewController"])
-
-    DispatchQueue.main.asyncAfter(deadline: .now()+2) {
-       fatalError()
-    }
   }
 }

@@ -11,6 +11,7 @@ target 'SampleFirebase' do
   pod 'Firebase/Firestore'
   pod 'FirebaseFirestoreSwift'
   pod 'Firebase/Crashlytics'
+  pod 'Firebase/Storage'
 
   # オマケ
   pod 'Firebase/MLNLTranslate'

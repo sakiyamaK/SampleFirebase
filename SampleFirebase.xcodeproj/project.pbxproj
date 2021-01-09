@@ -166,8 +166,8 @@
 		B6151EE524E7B1950004F0D1 /* Firestore */ = {
 			isa = PBXGroup;
 			children = (
-				B6151EE624E7B1950004F0D1 /* FirestoreViewController.swift */,
 				B6151EE724E7B1950004F0D1 /* Firestore.storyboard */,
+				B6151EE624E7B1950004F0D1 /* FirestoreViewController.swift */,
 				B6151EE824E7B1950004F0D1 /* Model */,
 			);
 			path = Firestore;

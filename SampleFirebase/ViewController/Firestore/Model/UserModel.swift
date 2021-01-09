@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import FirebaseAuth
 
 struct UserModel: Codable {
 
@@ -22,6 +23,11 @@ struct UserModel: Codable {
 
   private var _height: String?
   var height: String { _height ?? "" }
+
+  private let auth = Auth.auth()
+  var isEmailValidation: Bool {
+    auth.currentUser?.isEmailVerified ?? false
+  }
 
   private enum CodingKeys: String, CodingKey {
     case _first = "first"

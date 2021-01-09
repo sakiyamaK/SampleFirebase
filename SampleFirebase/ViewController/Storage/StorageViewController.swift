@@ -31,18 +31,25 @@ class StorageViewController: UIViewController {
 private extension StorageViewController {
   @objc func upload() {
     guard let image = uploadImageView.image else { return }
-    StorageUtil.upload(image: image) { (url, error) in
-      if let error = error {
-        return
+    StorageUtil.upload(image: image) { result in
+      switch result {
+      case .failure(let error):
+        print(error)
+      case .success(let url):
+        self.downloadURL = url
       }
-      self.downloadURL = url
     }
   }
 
   @objc func download() {
     guard let downloadURL = downloadURL else { return }
-    StorageUtil.download(downloadURL){ (image, error) in
-      self.downloadImageView.image = image
+    StorageUtil.download(downloadURL){ result in
+      switch result {
+      case .failure(let error):
+        print(error)
+      case .success(let image):
+        self.downloadImageView.image = image
+      }
     }
   }
 }

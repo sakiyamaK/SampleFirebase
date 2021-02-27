@@ -21,43 +21,43 @@ class MLViewController: UIViewController {
     }
 
     @objc func tapTransButton(_ sender: UIButton) {
-        debugPrint(TranslateLanguage.en)
-        let languageId = NaturalLanguage.naturalLanguage().languageIdentification()
-        languageId.identifyLanguage(for: self.preTextView.text) { (codeStr, error) in
-            if let _error = error {
-                debugPrint(_error)
-                return
-            }
-
-            guard
-                let _codeStr = codeStr else {
-                    debugPrint("no languageCode")
-                    return
-            }
-
-            let sourceLanguageCode = TranslateLanguage.fromLanguageCode(_codeStr)
-            debugPrint("==================")
-            debugPrint(sourceLanguageCode.rawValue)
-            debugPrint(TranslateLanguage.zh.rawValue)
-
-            let options = TranslatorOptions(sourceLanguage: sourceLanguageCode, targetLanguage: .en)
-            let translator = NaturalLanguage.naturalLanguage().translator(options: options)
-            translator.downloadModelIfNeeded { (error) in
-                if let _error = error {
-                    debugPrint(_error)
-                    return
-                }
-                translator.translate(self.preTextView.text) { (afterText, error) in
-                    if let _error = error {
-                        debugPrint(_error)
-                        return
-                    }
-                    guard let afterText = afterText else { return }
-                    DispatchQueue.main.async {
-                        self.afterTextView.text = afterText
-                    }
-                }
-            }
-        }
+//        debugPrint(TranslateLanguage.en)
+//        let languageId = NaturalLanguage.naturalLanguage().languageIdentification()
+//        languageId.identifyLanguage(for: self.preTextView.text) { (codeStr, error) in
+//            if let _error = error {
+//                debugPrint(_error)
+//                return
+//            }
+//
+//            guard
+//                let _codeStr = codeStr else {
+//                    debugPrint("no languageCode")
+//                    return
+//            }
+//
+//            let sourceLanguageCode = TranslateLanguage.fromLanguageCode(_codeStr)
+//            debugPrint("==================")
+//            debugPrint(sourceLanguageCode.rawValue)
+//            debugPrint(TranslateLanguage.zh.rawValue)
+//
+//            let options = TranslatorOptions(sourceLanguage: sourceLanguageCode, targetLanguage: .en)
+//            let translator = NaturalLanguage.naturalLanguage().translator(options: options)
+//            translator.downloadModelIfNeeded { (error) in
+//                if let _error = error {
+//                    debugPrint(_error)
+//                    return
+//                }
+//                translator.translate(self.preTextView.text) { (afterText, error) in
+//                    if let _error = error {
+//                        debugPrint(_error)
+//                        return
+//                    }
+//                    guard let afterText = afterText else { return }
+//                    DispatchQueue.main.async {
+//                        self.afterTextView.text = afterText
+//                    }
+//                }
+//            }
+//        }
     }
 }

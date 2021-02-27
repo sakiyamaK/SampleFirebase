@@ -8,6 +8,7 @@
 
 import Foundation
 import Firebase
+import FirebaseRemoteConfig
 
 struct SampleModel: Codable {
   static let remoteConfigKey = "sample"

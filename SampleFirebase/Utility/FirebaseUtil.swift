@@ -12,11 +12,13 @@ import FirebaseCore
 final class FirebaseUtil {
 
   static func setup() {
+
     #if DEBUG
-    let name = "GoogleService-Info"
+    let name = "GoogleService-Info-dev"
     #else
     let name = "GoogleService-Info"
     #endif
+
     let filePath = Bundle.main.path(forResource: name, ofType: "plist")
     if let options = FirebaseOptions(contentsOfFile: filePath!) {
       FirebaseApp.configure(options: options)

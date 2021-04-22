@@ -9,7 +9,7 @@
 import Foundation
 import FirebaseAuth
 
-struct UserModel: Codable {
+struct TestModel: Codable {
 
   private var _first: String?
   var first: String { _first ?? "" }

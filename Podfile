@@ -15,8 +15,8 @@ target 'SampleFirebase' do
   pod 'Firebase/RemoteConfig', '7.6.0'
 
   # オマケ
-  pod 'GoogleMLKit/LanguageID'
-  pod 'GoogleMLKit/Translate'
+#  pod 'GoogleMLKit/LanguageID'
+#  pod 'GoogleMLKit/Translate'
 
   target 'SampleFirebaseTests' do
     inherit! :search_paths

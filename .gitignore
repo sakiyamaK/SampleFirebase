@@ -1,2 +1,8 @@
 SampleFirebase/GoogleService-Info-dev.plist
 SampleFirebase/GoogleService-Info.plist
+Gemfile
+Gemfile.lock
+Makefile
+Mintfile
+Pui.yml
+templates

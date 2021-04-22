@@ -8,6 +8,7 @@
 
 import Foundation
 import Firebase
+import FirebaseAnalytics
 
 class AnalyticsUtil {
     static func send(event: String , paramters: [String: Any]? = nil) {

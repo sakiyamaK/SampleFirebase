@@ -9,10 +9,9 @@
 import UIKit
 import FirebaseAuth
 
-
 final class AuthViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
-    Auth.auth().currentUser
+    print(Auth.auth().currentUser)
   }
 }

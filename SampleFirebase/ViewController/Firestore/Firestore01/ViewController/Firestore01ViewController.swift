@@ -7,9 +7,8 @@
 //
 
 import UIKit
-import Firebase
 
-class FirestoreViewController: UIViewController {
+final class Firestore01ViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
